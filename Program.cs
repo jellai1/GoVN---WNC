@@ -1,8 +1,24 @@
+using BTL.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContextPool<CarDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("dbconnect")).EnableSensitiveDataLogging().LogTo(Console.WriteLine, LogLevel.Information));  // thêm dòng này
+          
 
+builder.Services.AddScoped<IResponsitories,DbResponsitories>();
+//add session
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+    {
+        options.IdleTimeout = TimeSpan.FromSeconds(30);
+        options.Cookie.HttpOnly = true;
+        options.Cookie.IsEssential = true;
+    }
+
+);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -14,16 +30,16 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
 app.UseRouting();
 
 app.UseAuthorization();
-
-app.MapStaticAssets();
+//su dung session
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
