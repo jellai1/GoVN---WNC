@@ -1,0 +1,83 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model BTL.Models.Class.Xe
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">➕ Thêm Xe Mới</h2>
+    @if (ViewBag.Mes != null)
+    {
+
+        <p style="color:crimson;text-align:center">@ViewBag.Mes</p>
+    }
+
+    <form asp-action="CreateXe" asp-controller="Chuxe" method="post" enctype="multipart/form-data" class="shadow p-4 rounded-4 bg-light"> <!--upload file-->
+
+        <input type="hidden" asp-for="MaXe" />
+        <div class="mb-3">
+            <label class="form-label fw-bold">Tên xe</label>
+            <input asp-for="TenXe" class="form-control" placeholder="VD: Toyota Vios 2023" />
+            <span asp-validation-for="TenXe" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Loại xe</label>
+            <select asp-for="LoaiXe" class="form-select">
+                <option value="">-- Chọn loại xe --</option>
+                <option value="Wave">Wave</option>
+                <option value="Honda">Honda</option>
+                <option value="Yamaha">Yamaha</option>
+                <option value="Vision">Vision</option>
+                <option value="Khác">Khác</option>
+            </select>
+            <span asp-validation-for="LoaiXe" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Biển số</label>
+            <input asp-for="BienSo" class="form-control" placeholder="VD: 30F-123.45" />
+            <span asp-validation-for="BienSo" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Giá thuê / ngày (VNĐ)</label>
+            <input asp-for="GiaThueNgay" type="number"  class="form-control" placeholder="VD: 900000" />
+            <span asp-validation-for="GiaThueNgay" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Mô tả xe</label>
+            <textarea asp-for="MoTa" class="form-control" rows="3" placeholder="VD: Xe mới, tiết kiệm nhiên liệu, bảo dưỡng định kỳ..."></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Trạng thái</label>
+            <select asp-for="TrangThai" class="form-select">
+                <option value="Sẵn sàng">Sẵn sàng</option>
+                <option value="Đang thuê">Đang thuê</option>
+                <option value="Bảo trì">Bảo trì</option>
+            </select>
+            <span asp-validation-for="TrangThai" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Ảnh xe</label>
+            @if (!string.IsNullOrEmpty(Model.AnhXe))
+            {
+                <img src="@Model.AnhXe" width="150" height="100"  />
+            }
+            <input name="AnhXe" type="file"  class="form-control" />
+        </div>
+        
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary px-4">💾 Lưu xe</button>
+            <a href="@Url.Action("Index","Chuxe",new{id=Model.MaChuXe})" class="btn btn-secondary px-4">⬅️ Quay lại</a>
+        </div>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

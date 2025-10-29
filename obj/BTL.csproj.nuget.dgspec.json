@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\BTL\\BTL.csproj": {}
+    "D:\\tai lieu\\ĐH Mở Hà Nội\\GoVN---WNC-dk\\BTL_DK\\BTL\\BTL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\BTL\\BTL.csproj": {
+    "D:\\tai lieu\\ĐH Mở Hà Nội\\GoVN---WNC-dk\\BTL_DK\\BTL\\BTL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\BTL\\BTL.csproj",
+        "projectUniqueName": "D:\\tai lieu\\ĐH Mở Hà Nội\\GoVN---WNC-dk\\BTL_DK\\BTL\\BTL.csproj",
         "projectName": "BTL",
-        "projectPath": "C:\\Users\\Admin\\BTL\\BTL.csproj",
+        "projectPath": "D:\\tai lieu\\ĐH Mở Hà Nội\\GoVN---WNC-dk\\BTL_DK\\BTL\\BTL.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\BTL\\obj\\",
+        "outputPath": "D:\\tai lieu\\ĐH Mở Hà Nội\\GoVN---WNC-dk\\BTL_DK\\BTL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -47,8 +47,20 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

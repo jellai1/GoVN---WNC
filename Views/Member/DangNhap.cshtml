@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model BTL.Models.Class.Members;
+<div class="dk">
+    <link rel="stylesheet" href="~/css/dinhdang/StyleSheet.css" />
+    <h2>Đăng Nhập</h2>
+    <form asp-action="Login" asp-controller="Member" method="post">
+
+        <div>
+            <label>Số điện thoại</label>
+           <input type="text" name="sdt" required="required"/>
+        </div>
+        <br />
+        <div>
+            <label>Password</label>
+           <input type="password" name="password" required="required"/>
+        </div>
+        <br/>
+        <div>
+            <button type="submit" name="dangnhap" >Đăng Nhập</button>
+        </div>
+        <br/>
+        <div class="link">
+            <a href="@Url.Action("DangKy", "Member")">Đăng ký</a>
+            /
+            <a href="@Url.Action("DangNhap", "Member")">Login</a>
+        </div>
+    </form>
+</div>
+@if (ViewBag.Message != null)
+{
+    <p style="color:red">@ViewBag.Message</p>
+}
+
+

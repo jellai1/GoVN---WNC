@@ -1,0 +1,78 @@
+@model IEnumerable<BTL.Models.Class.Xe>
+
+@{
+    ViewData["Title"] = "Tìm kiếm xe";
+    Layout = "_Layout";
+}
+
+<div class="container my-4">
+    <h2 class="text-primary mb-4 text-center">Tìm kiếm phương tiện</h2>
+
+    <!-- Form tìm kiếm -->
+    <form asp-action="Search" method="get" class="row g-3 justify-content-center mb-4">
+        <div class="col-md-3">
+            <input type="text" name="keyword" class="form-control"
+                   placeholder="Nhập tên hoặc mô tả xe..."
+                   value="@ViewBag.Keyword" />
+        </div>
+
+        <div class="col-md-2">
+            @{
+                string loaiXe = ViewBag.LoaiXe as string;
+            }
+            <select name="loaiXe" class="form-select">
+                <option value="">-- Loại xe --</option>
+                <option value="Oto" selected="@(loaiXe == "Oto")">Ô tô</option>
+                <option value="XeMay" selected="@(loaiXe == "XeMay")">Xe máy</option>
+                <option value="XeDap" selected="@(loaiXe == "XeDap")">Xe đạp</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <input type="number" name="minPrice" class="form-control"
+                   placeholder="Giá tối thiểu" value="@ViewBag.MinPrice" />
+        </div>
+
+        <div class="col-md-2">
+            <input type="number" name="maxPrice" class="form-control"
+                   placeholder="Giá tối đa" value="@ViewBag.MaxPrice" />
+        </div>
+
+        <div class="col-md-2 d-grid">
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-search"></i> Tìm kiếm
+            </button>
+        </div>
+    </form>
+
+    <!-- Kết quả -->
+    @if (Model != null && Model.Any())
+    {
+        <div class="row g-4">
+            @foreach (var xe in Model)
+            {
+                <div class="col-md-4 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <img src="@xe.AnhXe" class="card-img-top" alt="@xe.TenXe"
+                             style="height:180px;object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">@xe.TenXe</h5>
+                            <p class="card-text text-muted">@xe.MoTa</p>
+                            <p class="fw-bold text-danger">@xe.GiaThueNgay.ToString("N0") VNĐ/ngày</p>
+                            <p><span class="badge bg-secondary">@xe.LoaiXe</span></p>
+                            <a href="/Xe/ChiTiet/@xe.MaXe" class="btn btn-outline-primary btn-sm">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center mt-4">
+            Không tìm thấy phương tiện nào phù hợp với yêu cầu.
+        </div>
+    }
+</div>

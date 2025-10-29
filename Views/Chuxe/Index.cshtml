@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<BTL.Models.Class.Xe>;
+
+<link rel="stylesheet" href="~/css/dinhdang/Chuxe.css" />
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Xin chào, Chủ Xe 👋</h2>
+
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3">
+            <div class="list-group shadow-sm rounded-3">
+                <a href="#" class="list-group-item list-group-item-action active">📋 Quản lý xe</a>
+                <a href="@Url.Action("Them", "Chuxe")" class="list-group-item list-group-item-action">➕ Thêm xe mới</a>
+                <a href="#" class="list-group-item list-group-item-action">📅 Yêu cầu đặt xe</a>
+                <a href="#" class="list-group-item list-group-item-action">📜 Lịch sử</a>
+                <a href="@Url.Action("Logout", "Member")" class="list-group-item list-group-item-action text-danger">🚪 Đăng xuất</a>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="col-md-9">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Danh sách xe của bạn</h4>
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên xe</th>
+                                <th>Loại xe</th>
+                                <th>Biển số</th>
+                                <th>Giá thuê / ngày</th>
+                                <th>Mô tả</th>
+                                <th>Trạng thái</th>
+                                <th>Ảnh xe</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @{
+                            int stt = 1;
+                        }
+                            @foreach(var item in Model)
+                            {
+                                <tr id="@item.MaXe">
+                                    <td>@stt</td>
+                                    <td>@item.TenXe</td>
+                                    <td>@item.LoaiXe</td>
+                                    <td>@item.BienSo</td>
+                                    <td>@item.GiaThueNgay</td>
+                                    <td>@item.MoTa</td>
+                                    <td>@item.TrangThai</td>
+                                    <td class ="anh">
+                                        <img src="@item.AnhXe" />
+                                    </td>
+                                    <td>
+                                    <a href="@Url.Action("Them", "Chuxe",new{id=@item.MaXe})"><button>Edit</button></a>
+                                    <a href="javascript:dodelete(@item.MaXe)"><button>Delete</button></a>
+                                    </td>
+                                </tr>
+                                stt++;
+
+                            }
+                            
+                        </tbody>
+                    </table>
+
+                    <div class="text-end">
+                        <a href="@Url.Action("Them","Chuxe")" class="btn btn-primary">+ Thêm xe mới</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function dodelete(id){
+
+        let arl=confirm("Bạn chắc chắn muốn xóa");
+        if(!arl){
+            return;
+        }
+
+        let url= "@Url.Action("Delete", "Chuxe")".concat("/",id);
+        let request=new Request(url,{method:"GET"});
+        fetch(request)
+        .then(response=>{
+            console.log(response.statusText);
+            return response.json();
+        })
+        .then(result=>{
+            console.log("Result: ",JSON.stringify(result))
+            if(result.success){
+                let row=document.getElementById(id)
+                if(row){
+                    row.remove();
+                }
+            }
+            else{
+                alert("Xoa that bai");
+            }
+        })
+        .catch(error=>console.error("Error!",error))
+        .finally(()=>console.log("Done!"));
+
+    }
+
+</script>
+

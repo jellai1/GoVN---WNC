@@ -1,0 +1,341 @@
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\appsettings.Development.json
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\appsettings.json
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\BTL.staticwebassets.runtime.json
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\BTL.staticwebassets.endpoints.json
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\BTL.exe
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\BTL.deps.json
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\BTL.runtimeconfig.json
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\BTL.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\BTL.pdb
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Azure.Core.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Azure.Identity.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Humanizer.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\Mono.TextTemplating.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.ClientModel.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.CodeDom.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Composition.Convention.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Composition.Hosting.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Composition.Runtime.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Composition.TypedParts.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Drawing.Common.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Formats.Asn1.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.IO.Pipelines.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Memory.Data.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Runtime.Caching.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Security.Permissions.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Text.Json.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\System.Windows.Extensions.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+F:\Webnc\BTL\BT\BTL\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.csproj.AssemblyReference.cache
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\rpswa.dswa.cache.json
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.AssemblyInfoInputs.cache
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.AssemblyInfo.cs
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.csproj.CoreCompileInputs.cache
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.MvcApplicationPartsAssemblyInfo.cache
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.RazorAssemblyInfo.cache
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.RazorAssemblyInfo.cs
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\rjimswa.dswa.cache.json
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\scopedcss\bundle\BTL.styles.css
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\scopedcss\projectbundle\BTL.bundle.scp.css
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\staticwebassets.build.json
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\staticwebassets.build.json.cache
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\staticwebassets.development.json
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.csproj.Up2Date
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.dll
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\refint\BTL.dll
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.pdb
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\BTL.genruntimeconfig.cache
+F:\Webnc\BTL\BT\BTL\BTL\obj\Debug\net8.0\ref\BTL.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\appsettings.Development.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\appsettings.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\BTL.staticwebassets.runtime.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\BTL.staticwebassets.endpoints.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\BTL.exe
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\BTL.deps.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\BTL.runtimeconfig.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\BTL.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\BTL.pdb
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Azure.Core.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Azure.Identity.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Humanizer.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.ClientModel.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.CodeDom.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Memory.Data.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Text.Json.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.csproj.AssemblyReference.cache
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.GeneratedMSBuildEditorConfig.editorconfig
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.AssemblyInfoInputs.cache
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.AssemblyInfo.cs
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.csproj.CoreCompileInputs.cache
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.MvcApplicationPartsAssemblyInfo.cache
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.RazorAssemblyInfo.cache
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.RazorAssemblyInfo.cs
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\scopedcss\bundle\BTL.styles.css
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\scopedcss\projectbundle\BTL.bundle.scp.css
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\staticwebassets.build.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\staticwebassets.development.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.csproj.Up2Date
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\refint\BTL.dll
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.pdb
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\BTL.genruntimeconfig.cache
+D:\tai lieu\ĐH Mở Hà Nội\GoVN---WNC-dk\BTL_DK\BTL\obj\Debug\net8.0\ref\BTL.dll
