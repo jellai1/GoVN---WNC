@@ -20,7 +20,9 @@ namespace BTL.Models.Class
           public float GiaThueNgay {  get; set; }
           public string MoTa {  get; set; }
           public string TrangThai {  get; set; }
-        public string AnhXe {  get; set; }
+          public string AnhXe {  get; set; }
+
+ 
 
     }
 }

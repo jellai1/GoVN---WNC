@@ -1,0 +1,111 @@
+﻿@model IEnumerable<BTL.Models.Class.YeuCauDatXeViewModel>
+
+<link rel="stylesheet" href="~/css/dinhdang/Chuxe.css" />
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Xin chào, Chủ Xe 👋</h2>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group shadow-sm rounded-3">
+                <a href="@Url.Action("Index", "Chuxe")" class="list-group-item list-group-item-action">📋 Quản lý xe</a>
+                <a href="@Url.Action("Them", "Chuxe")" class="list-group-item list-group-item-action">➕ Thêm xe mới</a>
+                <a href="@Url.Action("YeuCauDatXe", "Chuxe")" class="list-group-item list-group-item-action active">📅 Yêu cầu đặt xe</a>
+                <a href="#" class="list-group-item list-group-item-action">📜 Lịch sử</a>
+                <a href="@Url.Action("Logout", "Member")" class="list-group-item list-group-item-action text-danger">🚪 Đăng xuất</a>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card shadow-sm rounded-3">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">📅 Danh sách yêu cầu đặt xe</h4>
+
+                    @if (Model == null || !Model.Any())
+                    {
+                        <div class="alert alert-info text-center">Hiện chưa có yêu cầu đặt xe nào.</div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive" style="overflow-x:auto;">
+                            <table class="table table-bordered table-hover align-middle text-center" style="min-width:1000px;">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Tên xe</th>
+                                        <th>Người thuê</th>
+                                        <th>Email</th>
+                                        <th>SDT</th>
+                                        <th>Ngày bắt đầu</th>
+                                        <th>Ngày kết thúc</th>
+                                        <th>Tổng tiền</th>
+                                        <th>Trạng thái</th>
+                                        <th>Hành động</th>
+                                        <th>Thanh Toán</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        int i = 1;
+                                    }
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@i</td>
+                                            <td>@item.TenXe</td>
+                                            <td>@item.TenNguoiThue</td>
+                                            <td>@item.Email</td>
+                                            <td>@item.SDT</td>
+                                            <td>@item.NgayBatDau.ToString("dd/MM/yyyy")</td>
+                                            <td>@item.NgayKetThuc.ToString("dd/MM/yyyy")</td>
+                                            <td>@item.TongTien.ToString("N0") đ</td>
+                                            <td>
+                                                <span class="badge @(item.TrangThai == "Đang chờ xác nhận" ? "bg-warning text-dark" :
+                                                                                                                           item.TrangThai == "Đã xác nhận" ? "bg-success" : "bg-danger")">
+                                            @item.TrangThai
+                                        </span>
+                                    </td>
+                                    <td>
+                                        @if (item.TrangThai == "Đang chờ xác nhận")
+                                                {
+                                                    <form asp-action="CapNhatTrangThai" method="post" style="display:inline">
+                                                        <input type="hidden" name="maDatXe" value="@item.MaDatXe" />
+                                                        <input type="hidden" name="trangThai" value="Đã xác nhận" />
+                                                        <button type="submit" class="btn btn-success btn-sm">✅ Chấp nhận</button>
+                                                    </form>
+
+                                                    <form asp-action="CapNhatTrangThai" method="post" style="display:inline">
+                                                        <input type="hidden" name="maDatXe" value="@item.MaDatXe" />
+                                                        <input type="hidden" name="trangThai" value="Từ chối" />
+                                                        <button type="submit" class="btn btn-danger btn-sm">❌ Từ chối</button>
+                                                    </form>
+                                                }
+                                                else
+                                                {
+                                                    <em>Đã xử lý</em>
+                                                }
+                                            </td>
+                                            <td>
+                                                @if (item.TrangThai == "Đã xác nhận")
+                                                {
+                                                    <span class="badge @(item.TrangThaiTT == "Chưa thanh toán" ? "bg-danger" : "bg-success")">
+                                                        @item.TrangThaiTT
+                                                    </span>
+                                                }
+                                                else
+                                                {
+                                                    <em>Chưa xác nhận</em>
+                                                }
+                                            </td>
+                                        </tr>
+                                        i++;
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 ﻿@*
-    Views/Shared/_Layout.cshtml
+
 *@
 <!DOCTYPE html>
 <html lang="vi">
@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BTL.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 </head>
 <body>
+    @{
+        var tenDN = Context.Session.GetString("TenDN");
+        var vaiTro = Context.Session.GetString("VaiTro");
+    }
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -24,27 +30,69 @@
                 </button>
 
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <!-- Menu bên trái -->
+                   
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Trang chủ</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Xe" asp-action="Search">Tìm xe</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Xe" asp-action="DangTin">Đăng tin cho thuê</a>
-                        </li>
+                      
+
+
+                        @if (vaiTro == "ThueXe")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Xe" asp-action="Search">Tìm xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="DatXe" asp-action="Index1">Đang thuê</a>
+                            </li>
+                        }
+
+                        
+                        @if (vaiTro == "ChuXe")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Chuxe" asp-action="Index">Đăng tin cho thuê</a>
+                            </li>
+                        }
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Home" asp-action="Contact">Liên hệ</a>
                         </li>
                     </ul>
 
-                    <!-- Góc phải: nút Đăng nhập -->
                     <div class="text-end">
-                        <a asp-controller="Admin" asp-action="Index" class="btn btn-outline-primary">
-                            <i class="bi bi-person-circle"></i> Đăng nhập
-                        </a>
+                        @if (!string.IsNullOrEmpty(tenDN))
+                        {
+                            <div class="d-flex align-items-center">
+                                <span class="me-3 fw-semibold text-primary">
+                                    @if (vaiTro == "ChuXe")
+                                    {
+                                        <text>🚗 Chủ xe: @tenDN</text>
+                                    }
+                                    else if (vaiTro == "ThueXe")
+                                    {
+                                        <text>👤 Khách hàng: @tenDN</text>
+                                    }
+                                    else if (vaiTro == "Admin")
+                                    {
+                                        <text>🛠️ Admin: @tenDN</text>
+                                    }
+                                </span>
+                                <a asp-controller="Member" asp-action="Logout" class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-box-arrow-right"></i> Đăng xuất
+                                </a>
+                            </div>
+                        }
+                        else
+                        {
+                            <a asp-controller="Member" asp-action="DangNhap" class="btn btn-outline-primary me-2">
+                                <i class="bi bi-box-arrow-in-right"></i> Đăng nhập
+                            </a>
+                            <a asp-controller="Member" asp-action="DangKy" class="btn btn-primary">
+                                <i class="bi bi-person-plus"></i> Đăng ký
+                            </a>
+                        }
                     </div>
                 </div>
             </div>

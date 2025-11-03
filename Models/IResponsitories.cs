@@ -1,5 +1,6 @@
 ﻿using BTL.Models.Class;
 
+
 namespace BTL.Models
 {
     public interface IResponsitories
@@ -16,6 +17,15 @@ namespace BTL.Models
         public Xe GetIDchu(int? id);
         public bool Delete(int id); 
         public Xe Update(Xe x);
+
+        void CreateDatXe(DatXe datXe);
+
+        bool IsXeDaDuocDat(int maXe, int maNguoiThue);
+        IEnumerable<DatXe> GetAllDatXe();
+    
+
+
+
 
     }
 }

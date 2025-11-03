@@ -89,7 +89,9 @@ namespace BTL.Controllers
             HttpContext.Session.SetString("SDT", member.SDT);
             HttpContext.Session.SetInt32("MaUser", member.MaUser);
             HttpContext.Session.SetString("VaiTro", member.VaiTro);
-           
+            HttpContext.Session.SetString("TenDN", member.TenDN);
+
+
             //dieu huong dựa trên vai trò 
             if (member.VaiTro == "ChuXe")
             {
@@ -97,7 +99,7 @@ namespace BTL.Controllers
             }
             else if(member.VaiTro =="ThueXe")
             {
-                return RedirectToAction("Index", "Thuexe");
+                return RedirectToAction("Index", "Home");
             }
 
             //Neu co loi quay lai trang dang nhap

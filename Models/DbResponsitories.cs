@@ -1,9 +1,11 @@
 ﻿using BTL.Models.Class;
+
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.PortableExecutable;
 
 namespace BTL.Models
 {
+  
     public class DbResponsitories:IResponsitories
     {
         private readonly CarDbContext context;
@@ -14,6 +16,33 @@ namespace BTL.Models
              context.members.Add(members);
              context.SaveChanges();
         }
+
+        public void CreateDatXe(DatXe datXe)
+        {
+            context.datXes.Add(datXe);
+            context.SaveChanges();
+        }
+
+
+     
+
+        public bool IsXeDaDuocDat(int maXe, int maNguoiThue)
+        {
+            return context.datXes.Any(d =>
+                d.MaXe == maXe &&
+                d.MaNguoiThue == maNguoiThue &&
+                (d.TrangThai == "Đang chờ xác nhận" || d.TrangThai == "Đã xác nhận"));
+        }
+
+
+
+
+
+        public IEnumerable<DatXe> GetAllDatXe()
+        {
+            return context.datXes.ToList();
+        }
+
         public List<Members> ListMembers()
         {
             return context.members.ToList();
