@@ -1,9 +1,9 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{
-}
-@model List<BTL.Models.Class.Xe>;
+@using BTL.Models.Class
+
+@model List<BTL.Models.Class.Xe>
 
 <link rel="stylesheet" href="~/css/dinhdang/Chuxe.css" />
 <div class="container mt-4">
@@ -15,11 +15,12 @@
             <div class="list-group shadow-sm rounded-3">
                 <a href="#" class="list-group-item list-group-item-action active">📋 Quản lý xe</a>
                 <a href="@Url.Action("Them", "Chuxe")" class="list-group-item list-group-item-action">➕ Thêm xe mới</a>
-                <a href="#" class="list-group-item list-group-item-action">📅 Yêu cầu đặt xe</a>
+                <a href="@Url.Action("YeuCauDatXe", "Chuxe")" class="list-group-item list-group-item-action">📅 Yêu cầu đặt xe</a>
                 <a href="#" class="list-group-item list-group-item-action">📜 Lịch sử</a>
                 <a href="@Url.Action("Logout", "Member")" class="list-group-item list-group-item-action text-danger">🚪 Đăng xuất</a>
             </div>
         </div>
+
 
         <!-- Main content -->
         <div class="col-md-9">
@@ -43,8 +44,12 @@
                         @{
                             int stt = 1;
                         }
+                     
                             @foreach(var item in Model)
                             {
+
+
+                         
                                 <tr id="@item.MaXe">
                                     <td>@stt</td>
                                     <td>@item.TenXe</td>
@@ -53,6 +58,8 @@
                                     <td>@item.GiaThueNgay</td>
                                     <td>@item.MoTa</td>
                                     <td>@item.TrangThai</td>
+                                  
+                                
                                     <td class ="anh">
                                         <img src="@item.AnhXe" />
                                     </td>

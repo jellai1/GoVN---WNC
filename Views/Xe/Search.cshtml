@@ -8,7 +8,7 @@
 <div class="container my-4">
     <h2 class="text-primary mb-4 text-center">Tìm kiếm phương tiện</h2>
 
-    <!-- Form tìm kiếm -->
+
     <form asp-action="Search" method="get" class="row g-3 justify-content-center mb-4">
         <div class="col-md-3">
             <input type="text" name="keyword" class="form-control"
@@ -45,7 +45,7 @@
         </div>
     </form>
 
-    <!-- Kết quả -->
+
     @if (Model != null && Model.Any())
     {
         <div class="row g-4">
@@ -60,9 +60,46 @@
                             <p class="card-text text-muted">@xe.MoTa</p>
                             <p class="fw-bold text-danger">@xe.GiaThueNgay.ToString("N0") VNĐ/ngày</p>
                             <p><span class="badge bg-secondary">@xe.LoaiXe</span></p>
+
                             <a href="/Xe/ChiTiet/@xe.MaXe" class="btn btn-outline-primary btn-sm">
                                 Xem chi tiết
                             </a>
+
+                            @{
+                                var daDatXe = ViewBag.DaDatXe as Dictionary<int, string>;
+                                var datXeList = ViewBag.DatXeList as List<BTL.Models.DatXe>;
+                                string trangThai = "Chưa đặt";
+
+                                if (daDatXe != null && daDatXe.ContainsKey(xe.MaXe))
+                                {
+                                    trangThai = daDatXe[xe.MaXe];
+                                }
+                            }
+
+                            @if (trangThai == "Chưa đặt")
+                            {
+                                <a href="/DatXe/Index/@xe.MaXe" class="btn btn-success btn-sm flex-fill ms-1">
+                                    Đặt xe
+                                </a>
+                            }
+                            else if (trangThai == "Đang chờ xác nhận")
+                            {
+                                <button class="btn btn-warning btn-sm flex-fill ms-1" disabled>Đang chờ</button>
+                            }
+                            else if (trangThai == "Đã xác nhận")
+                            {
+                                var datXeXe = datXeList?.FirstOrDefault(d => d.MaXe == xe.MaXe && d.TrangThai == "Đã xác nhận");
+                                if (datXeXe != null && datXeXe.TrangThaiTT == "Đã thanh toán")
+                                {
+                                    <a href="/DatXe/Index/@xe.MaXe" class="btn btn-success btn-sm flex-fill ms-1">
+                                        Đặt xe
+                                    </a>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-secondary btn-sm flex-fill ms-1" disabled>Đang cho thuê</button>
+                                }
+                            }
                         </div>
                     </div>
                 </div>
@@ -75,4 +112,6 @@
             Không tìm thấy phương tiện nào phù hợp với yêu cầu.
         </div>
     }
+    ```
+
 </div>

@@ -7,6 +7,10 @@ namespace BTL.Models
         public CarDbContext(DbContextOptions<CarDbContext> options) : base(options) { }
         public DbSet<Members> members { get; set; }
         public DbSet<Xe> xes { get; set; }
+        public DbSet<DatXe> datXes { get; set; }
+   
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -1,0 +1,92 @@
+﻿@{
+    var xe = ViewBag.Xe as BTL.Models.Class.Xe;
+    ViewData["Title"] = "Đặt xe";
+    var today = DateTime.Today.ToString("yyyy-MM-dd");
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">Đặt xe: @xe.TenXe</h2>
+
+    <form asp-action="DatXe" method="post" class="col-md-6 offset-md-3 border p-4 shadow rounded">
+        <input type="hidden" name="MaXe" value="@xe.MaXe" />
+        <input type="hidden" name="TongTien" id="TongTienHidden" value="0" />
+
+        <div class="mb-3">
+            <label>Giá thuê/ngày (VNĐ)</label>
+            <input type="text" id="GiaThueNgay" class="form-control" value="@xe.GiaThueNgay" readonly data-gia="@xe.GiaThueNgay" />
+        </div>
+
+        <div class="mb-3">
+            <label>Ngày bắt đầu</label>
+            <input type="date" id="NgayBatDau" name="NgayBatDau" class="form-control" value="@today" required />
+        </div>
+
+        <div class="mb-3">
+            <label>Ngày kết thúc</label>
+            <input type="date" id="NgayKetThuc" name="NgayKetThuc" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label>Tổng tiền thuê (VNĐ)</label>
+            <input type="text" id="TongTien" class="form-control" readonly />
+        </div>
+
+        <div class="mb-3">
+            <label>Phương thức thanh toán</label>
+            <select name="PhuongThucTT" class="form-select" required>
+                <option value="Tiền mặt">Tiền mặt</option>
+                <option value="Chuyển khoản">Chuyển khoản</option>
+                <option value="Ví điện tử">Ví điện tử</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Gửi yêu cầu thuê</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const giaInput = document.getElementById("GiaThueNgay");
+            const batDauInput = document.getElementById("NgayBatDau");
+            const ketThucInput = document.getElementById("NgayKetThuc");
+            const tongTienInput = document.getElementById("TongTien");
+            const tongTienHidden = document.getElementById("TongTienHidden");
+
+            const giaNgay = parseFloat(giaInput.dataset.gia);
+
+            function tinhTien() {
+                const batDauVal = batDauInput.value;
+                const ketThucVal = ketThucInput.value;
+
+                if (!batDauVal || !ketThucVal) {
+                    tongTienInput.value = "";
+                    tongTienHidden.value = 0;
+                    return;
+                }
+
+                const batDau = new Date(batDauVal);
+                const ketThuc = new Date(ketThucVal);
+
+                if (ketThuc < batDau) {
+                    tongTienInput.value = "";
+                    tongTienHidden.value = 0;
+                    return;
+                }
+
+                const soNgay = Math.round((ketThuc - batDau) / (1000 * 3600 * 24)) + 1;
+                const tong = soNgay * giaNgay;
+
+                tongTienInput.value = tong.toLocaleString('vi-VN');
+                tongTienHidden.value = tong;
+            }
+
+   
+            batDauInput.addEventListener("change", tinhTien);
+            ketThucInput.addEventListener("change", tinhTien);
+
+
+            tinhTien();
+        });
+    </script>
+}

@@ -1,0 +1,37 @@
+﻿@model BTL.Models.Class.YeuCauDatXeViewModel
+
+@{
+    ViewData["Title"] = "Thanh toán";
+}
+
+<div class="container mt-5">
+    <h3>Thanh toán xe: @Model.TenXe</h3>
+    <hr />
+
+    <form asp-action="ThanhToanPost" method="post">
+        <input type="hidden" name="MaDatXe" value="@Model.MaDatXe" />
+        <input type="hidden" name="MaXe" value="@Model.MaXe" />
+        <input type="hidden" name="TongTien" value="@Model.TongTien" />
+
+        <div class="mb-3">
+            <label class="form-label">Tên xe</label>
+            <input type="text" class="form-control" value="@Model.TenXe" disabled />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Tổng tiền thanh toán</label>
+            <input type="text" class="form-control" value="@Model.TongTien.ToString("N0") + " đ"" disabled />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Hình thức thanh toán</label>
+            <select class="form-select" name="HinhThuc">
+                <option value="Chuyển khoản">Chuyển khoản</option>
+                <option value="Tiền mặt">Tiền mặt</option>
+                <option value="Ví điện tử">Ví điện tử</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">💳 Thanh toán</button>
+    </form>
+</div>

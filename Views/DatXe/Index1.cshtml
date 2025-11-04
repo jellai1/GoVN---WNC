@@ -1,0 +1,116 @@
+﻿@model List<BTL.Models.Class.YeuCauDatXeViewModel>
+
+@{
+    ViewData["Title"] = "Danh sách xe đã đặt";
+}
+
+@if (TempData["Mes"] != null)
+{
+    <div class="alert alert-success text-center">
+        @TempData["Mes"]
+    </div>
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 border-0 rounded-4">
+        <h3 class="text-center mb-4 text-primary fw-bold">
+            🚗 Danh sách xe đã được xác nhận
+        </h3>
+
+        @if (ViewBag.Message != null)
+        {
+            <div id="alertMessage" class="alert alert-info text-center fw-bold mb-4">
+                @ViewBag.Message
+            </div>
+        }
+
+        @if (Model != null && Model.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-striped table-hover text-center align-middle">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Tên xe</th>
+                            <th>Ngày bắt đầu</th>
+                            <th>Ngày kết thúc</th>
+                            <th>Tổng tiền</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                            <th>Trạng thái giao dịch</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="fw-semibold">@item.TenXe</td>
+                                <td>@item.NgayBatDau.ToString("dd/MM/yyyy")</td>
+                                <td>@item.NgayKetThuc.ToString("dd/MM/yyyy")</td>
+                                <td class="text-success fw-bold">@item.TongTien.ToString("N0") đ</td>
+                                <td>
+                                    @if (item.TrangThai == "Đã xác nhận")
+                                    {
+                                        <span class="badge bg-success px-3 py-2">Đã xác nhận</span>
+                                    }
+                                    else if (item.TrangThai == "Từ chối")
+                                    {
+                                        <span class="badge bg-danger px-3 py-2">Từ chối</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-warning text-dark px-3 py-2">Đang chờ</span>
+                                    }
+                                </td>
+                                <td>
+                                  
+                                    @if (item.TrangThai == "Đã xác nhận" && (string.IsNullOrEmpty(item.TrangThaiTT) || item.TrangThaiTT == "Chưa thanh toán"))
+                                    {
+                                        <form asp-action="ThanhToan" method="get" style="display:inline">
+                                            <input type="hidden" name="maDatXe" value="@item.MaDatXe" />
+                                            <button type="submit" class="btn btn-primary btn-sm ms-1">💳 Thanh toán</button>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <em>Không có</em>
+                                    }
+                                </td>
+                                <td>
+                                    <span class="badge @(item.TrangThaiTT == "Đã thanh toán" ? "bg-success" : "bg-danger")">
+                                        @(string.IsNullOrEmpty(item.TrangThaiTT) ? "Chưa thanh toán" : item.TrangThaiTT)
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-secondary text-center mt-4">
+                Hiện tại bạn chưa có xe nào được xác nhận thuê.
+            </div>
+        }
+
+        <div class="text-center mt-4">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary px-4 py-2 rounded-3">
+                🏠 Quay lại trang chủ
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+       
+        setTimeout(() => {
+            const alertDiv = document.getElementById("alertMessage");
+            if (alertDiv) {
+                alertDiv.style.transition = "opacity 0.6s";
+                alertDiv.style.opacity = "0";
+                setTimeout(() => alertDiv.remove(), 600);
+            }
+        }, 3500);
+    </script>
+}
