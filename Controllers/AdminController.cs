@@ -9,9 +9,11 @@ namespace BTL.Controllers
     {
         private readonly IResponsitories responsitories;
         private readonly PasswordService _passwordService;
-        public AdminController(IResponsitories responsitories)
+        private readonly CarDbContext context;
+        public AdminController(IResponsitories responsitories, CarDbContext context)
         {
             this.responsitories = responsitories;
+            this.context = context;
             _passwordService = new PasswordService();
         }
         public IActionResult Index()
@@ -32,36 +34,67 @@ namespace BTL.Controllers
         }
 
         // ✅ Sửa tài khoản
+         public IActionResult Edit(int id)
+        {
+            if (context == null)
+            {
+                throw new Exception("CarDbContext chưa được inject — kiểm tra lại constructor hoặc Program.cs!");
+            }
+
+            var member = context.members.FirstOrDefault(x => x.MaUser == id);
+            if (member == null)
+                return NotFound();
+
+            return View(member);
+        }
+        // 💾 Xử lý cập nhật
         [HttpPost]
         public IActionResult Edit(Members model)
         {
-            var member = responsitories.ListMembers().FirstOrDefault(x => x.MaUser == model.MaUser);
-            if (member == null)
+            try
             {
-                TempData["Message"] = "Không tìm thấy tài khoản.";
-                return RedirectToAction("Index");
+                var existing = context.members.FirstOrDefault(m => m.MaUser == model.MaUser);
+                if (existing == null)
+                {
+                    TempData["Message"] = "Không tìm thấy tài khoản.";
+                    return RedirectToAction("Index");
+                }
+
+                existing.TenDN = model.TenDN;
+                existing.Email = model.Email;
+                existing.SDT = model.SDT;
+                existing.VaiTro = model.VaiTro;
+
+                // Nếu người admin nhập mật khẩu mới
+                if (!string.IsNullOrEmpty(model.MatKhau))
+                {
+                    var service = new BTL.Models.MK.PasswordService();
+                    existing.MatKhau = service.HashPassword(model.MatKhau);
+                }
+
+                context.SaveChanges();
+                TempData["Message"] = "✅ Cập nhật tài khoản thành công!";
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = "❌ Lỗi khi cập nhật: " + ex.Message;
             }
 
-            member.TenDN = model.TenDN;
-            member.Email = model.Email;
-            member.SDT = model.SDT;
-            member.VaiTro = model.VaiTro;
-
-            if (!string.IsNullOrEmpty(model.MatKhau))
-                member.MatKhau = _passwordService.HashPassword(model.MatKhau);
-
-            responsitories.Create(member); // nếu bạn có hàm Update thì nên dùng _repo.Update(member);
-            TempData["Message"] = "Cập nhật thành công!";
             return RedirectToAction("Index");
         }
 
         // ✅ Xóa tài khoản
-        [HttpPost]
         public IActionResult Delete(int id)
         {
             bool deleted = responsitories.Delete(id);
-            TempData["Message"] = deleted ? "Đã xóa tài khoản thành công!" : "Xóa thất bại!";
+
+            if (deleted)
+                TempData["Message"] = "✅ Xóa tài khoản thành công!";
+            else
+                TempData["Message"] = "❌ Không thể xóa tài khoản. Vui lòng thử lại.";
+
             return RedirectToAction("Index");
         }
+
     }
 }
