@@ -1,11 +1,14 @@
 using BTL.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using BTL.Models.Class;
+using BTL.Models.MK;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContextPool<CarDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("dbconnect")).EnableSensitiveDataLogging().LogTo(Console.WriteLine, LogLevel.Information));  // th�m d�ng n�y
+builder.Services.AddDbContextPool<CarDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("dbconnect")).EnableSensitiveDataLogging().LogTo(Console.WriteLine, LogLevel.Information));  // th�m d�ng n�y
           
 
 builder.Services.AddScoped<IResponsitories,DbResponsitories>();
@@ -43,3 +46,25 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<CarDbContext>();
+
+    // Kiểm tra xem admin có chưa
+    if (!context.members.Any(m => m.VaiTro == "Admin"))
+    {
+        var service = new PasswordService();
+        var admin = new Members
+        {
+            TenDN = "Admin",
+            Email = "admin@govn.vn",
+            SDT = "0368721805",
+            VaiTro = "Admin",
+            MatKhau = service.HashPassword("admin1122")
+        };
+        context.members.Add(admin);
+        context.SaveChanges();
+        Console.WriteLine("✅ Đã tạo tài khoản Admin mặc định!");
+    }
+}
