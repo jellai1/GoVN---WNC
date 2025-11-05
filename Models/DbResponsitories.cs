@@ -57,9 +57,8 @@ namespace BTL.Models
         //-------------------------------xe----------------------------------------------
         public void CreateCar(Xe xes)
         {
-          
             context.xes.Add(xes);
-            var count = context.SaveChanges();
+            context.SaveChanges();
         }
         public List<Xe> ListXe(int? id)
         {
@@ -79,16 +78,43 @@ namespace BTL.Models
         }
         public bool Delete(int id)
         {
-            var x = GetId(id);
-            if (x == null)
+            try
             {
+                // 🔹 Xóa các đơn thuê do người này tạo (nếu là khách thuê xe)
+                var datXeNguoiThue = context.datXes.Where(d => d.MaNguoiThue == id).ToList();
+                context.datXes.RemoveRange(datXeNguoiThue);
+
+                // 🔹 Lấy các xe do người này đăng (nếu là chủ xe)
+                var xeCuaChu = context.xes.Where(x => x.MaChuXe == id).ToList();
+
+                // 🔹 Với mỗi xe, xóa các đơn thuê liên quan trước
+                foreach (var xe in xeCuaChu)
+                {
+                    var datXeLienQuan = context.datXes.Where(d => d.MaXe == xe.MaXe).ToList();
+                    context.datXes.RemoveRange(datXeLienQuan);
+                }
+
+                // 🔹 Sau đó mới xóa các xe của họ
+                context.xes.RemoveRange(xeCuaChu);
+
+                // 🔹 Cuối cùng, xóa tài khoản thành viên
+                var member = context.members.FirstOrDefault(m => m.MaUser == id);
+                if (member != null)
+                {
+                    context.members.Remove(member);
+                }
+
+                // 🔹 Lưu thay đổi
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi xóa tài khoản: " + ex.Message);
                 return false;
             }
-            context.xes.Remove(x);
-            context.SaveChanges();
-            return true;
-
         }
+
         public Xe Update(Xe x)
         {
             var xes = GetId(x.MaXe);
