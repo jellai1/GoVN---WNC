@@ -1,21 +1,24 @@
 ﻿@model IEnumerable<BTL.Models.Class.Members>
 @{
     ViewData["Title"] = "Quản lý tài khoản";
-    Layout = "_Layout";
 }
 
-<div class="container py-4">
-    <h2 class="text-center text-primary mb-4">👑 Quản lý tài khoản</h2>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-    <!-- Nút Thêm mới -->
-    <div class="text-end mb-3">
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center fw-bold text-primary"> Quản lý tài khoản người dùng</h2>
+<div class="text-end mb-3">
         <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal">
             <i class="bi bi-person-plus"></i> Thêm tài khoản
         </button>
     </div>
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-info text-center">@TempData["Message"]</div>
+    }
 
-    <!-- Bảng danh sách -->
-    <table class="table table-bordered table-hover align-middle text-center">
+    <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-primary">
             <tr>
                 <th>ID</th>
@@ -23,57 +26,47 @@
                 <th>Email</th>
                 <th>SĐT</th>
                 <th>Vai trò</th>
-                <th>Thao tác</th>
+                <th class="text-center">Hành động</th>
             </tr>
         </thead>
         <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.MaUser</td>
-                <td>@item.TenDN</td>
-                <td>@item.Email</td>
-                <td>@item.SDT</td>
-                <td>
-                    @if (item.VaiTro == "Admin")
-                    {
-                        <span class="badge bg-danger">Admin</span>
-                    }
-                    else if (item.VaiTro == "ChuXe")
-                    {
-                        <span class="badge bg-success">Chủ xe</span>
-                    }
-                    else
-                    {
-                        <span class="badge bg-secondary">Thuê xe</span>
-                    }
-                </td>
-                <td>
-                    <button class="btn btn-sm btn-warning me-2"
-                            data-bs-toggle="modal"
-                            data-bs-target="#editModal"
-                            data-id="@item.MaUser"
-                            data-tendn="@item.TenDN"
-                            data-email="@item.Email"
-                            data-sdt="@item.SDT"
-                            data-vaitro="@item.VaiTro">
-                        <i class="bi bi-pencil-square"></i>
-                    </button>
-
-                    <form asp-action="Delete" asp-controller="Admin" method="post" style="display:inline;">
-                        <input type="hidden" name="id" value="@item.MaUser" />
-                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Xóa tài khoản này?')">
-                            <i class="bi bi-trash"></i>
-                        </button>
-                    </form>
-                </td>
-            </tr>
-        }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaUser</td>
+                    <td>@item.TenDN</td>
+                    <td>@item.Email</td>
+                    <td>@item.SDT</td>
+                    <td>
+                        @if (item.VaiTro == "ChuXe")
+                        {
+                            <span class="badge bg-success">Chủ xe</span>
+                        }
+                        else if (item.VaiTro == "ThueXe")
+                        {
+                            <span class="badge bg-info text-dark">Thuê xe</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Khác</span>
+                        }
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.MaUser" class="btn btn-warning btn-sm me-2">
+                            <i class="bi bi-pencil-square"></i> Sửa
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@item.MaUser" class="btn btn-danger btn-sm"
+                           onclick="return confirm('Bạn có chắc muốn xóa tài khoản này không?');">
+                            <i class="bi bi-trash"></i> Xóa
+                        </a>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>
 
-<!-- Modal thêm -->
+
 <div class="modal fade" id="addModal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -98,12 +91,10 @@
                     <div class="mb-3">
                         <label class="form-label">Mật khẩu</label>
                         <input name="MatKhau" type="password" class="form-control" />
-                        <small class="text-muted">Nếu trống sẽ dùng mặc định “123456”</small>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Vai trò</label>
                         <select name="VaiTro" class="form-select">
-                            <option value="Admin">Admin</option>
                             <option value="ChuXe">Chủ xe</option>
                             <option value="ThueXe">Thuê xe</option>
                         </select>
@@ -117,63 +108,3 @@
         </div>
     </div>
 </div>
-
-<!-- Modal sửa -->
-<div class="modal fade" id="editModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form asp-action="Edit" asp-controller="Admin" method="post">
-                <div class="modal-header bg-warning text-dark">
-                    <h5 class="modal-title">Sửa tài khoản</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" name="MaUser" id="edit-id" />
-                    <div class="mb-3">
-                        <label class="form-label">Tên đăng nhập</label>
-                        <input name="TenDN" id="edit-tendn" class="form-control" required />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <input name="Email" id="edit-email" type="email" class="form-control" required />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">SĐT</label>
-                        <input name="SDT" id="edit-sdt" class="form-control" required />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Mật khẩu mới</label>
-                        <input name="MatKhau" type="password" class="form-control" placeholder="Để trống nếu không đổi" />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Vai trò</label>
-                        <select name="VaiTro" id="edit-vaitro" class="form-select">
-                            <option value="Admin">Admin</option>
-                            <option value="ChuXe">Chủ xe</option>
-                            <option value="ThueXe">Thuê xe</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                    <button type="submit" class="btn btn-warning">Lưu thay đổi</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-@section Scripts {
-    <script>
-        // Gán dữ liệu vào form sửa
-        var editModal = document.getElementById('editModal');
-        editModal.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget;
-            document.getElementById('edit-id').value = button.getAttribute('data-id');
-            document.getElementById('edit-tendn').value = button.getAttribute('data-tendn');
-            document.getElementById('edit-email').value = button.getAttribute('data-email');
-            document.getElementById('edit-sdt').value = button.getAttribute('data-sdt');
-            document.getElementById('edit-vaitro').value = button.getAttribute('data-vaitro');
-        });
-    </script>
-}

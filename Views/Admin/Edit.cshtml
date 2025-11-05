@@ -1,0 +1,49 @@
+@model BTL.Models.Class.Members
+@{
+    ViewData["Title"] = "Sửa tài khoản";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary mb-4"> Cập nhật thông tin tài khoản</h2>
+
+    <form asp-action="Edit" method="post" class="shadow p-4 rounded bg-light">
+        <input type="hidden" asp-for="MaUser" />
+
+        <div class="mb-3">
+            <label class="form-label">Tên đăng nhập</label>
+            <input asp-for="TenDN" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Số điện thoại</label>
+            <input asp-for="SDT" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Mật khẩu mới (nếu muốn đổi)</label>
+            <input asp-for="MatKhau" type="password" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Vai trò</label>
+            <select asp-for="VaiTro" class="form-select">
+                <option value="ChuXe">Chủ xe</option>
+                <option value="ThueXe">Thuê xe</option>
+            </select>
+        </div>
+
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary me-2">
+                <i class="bi bi-save"></i> Lưu thay đổi
+            </button>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </form>
+</div>
