@@ -57,31 +57,38 @@
                         }
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Contact">Liên hệ</a>
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="LienHe">Liên hệ</a>
                         </li>
                     </ul>
 
                     <div class="text-end">
                         @if (!string.IsNullOrEmpty(tenDN))
                         {
-                            <div class="d-flex align-items-center">
-                                <span class="me-3 fw-semibold text-primary">
+                            <!-- Dropdown menu tài khoản -->
+                            <div class="dropdown">
+                                <button class="btn btn-light border dropdown-toggle" type="button" id="userMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-circle text-primary"></i> 
+                                    <span class="fw-semibold">@tenDN</span>
+                                    <small class="text-muted">(@vaiTro)</small>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="userMenu">
+                                    <li>
+                                    @if (vaiTro == "ThueXe")
+                                    {
+                                        <a class="dropdown-item" asp-controller="Member" asp-action="ChinhSua">
+                                                    <i class="bi bi-person-gear"></i> Chỉnh sửa tài khoản</a>
+                                    }
+
+                                    
                                     @if (vaiTro == "ChuXe")
                                     {
-                                        <text>🚗 Chủ xe: @tenDN</text>
+                                        <a class="dropdown-item" asp-controller="Member" asp-action="ChinhSua">
+                                                    <i class="bi bi-person-gear"></i> Chỉnh sửa tài khoản</a>
                                     }
-                                    else if (vaiTro == "ThueXe")
-                                    {
-                                        <text>👤 Khách hàng: @tenDN</text>
-                                    }
-                                    else if (vaiTro == "Admin")
-                                    {
-                                        <text>🛠️ Admin: @tenDN</text>
-                                    }
-                                </span>
-                                <a asp-controller="Member" asp-action="Logout" class="btn btn-outline-danger btn-sm">
-                                    <i class="bi bi-box-arrow-right"></i> Đăng xuất
-                                </a>
+                                    </li>
+                                    <li><a class="dropdown-item" asp-controller="Member" asp-action="Logout">
+                                        <i class="bi bi-box-arrow-right"></i> Đăng xuất</a></li>
+                                </ul>
                             </div>
                         }
                         else
