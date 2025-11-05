@@ -9,9 +9,11 @@ namespace BTL.Controllers
     public class MemberController : Controller
     {
         private readonly IResponsitories responsitories;
-        public MemberController(IResponsitories responsitories)
+        private readonly CarDbContext _context;
+        public MemberController(IResponsitories responsitories, CarDbContext context)
         {
             this.responsitories = responsitories;
+            _context = context;
         }
         public IActionResult DangKy()
         {
@@ -66,13 +68,18 @@ namespace BTL.Controllers
             var service = new PasswordService(); 
             var defaultPasswordHash = service.HashPassword("admin1122");
             //kiem tra admin
-            if (members.SDT == "0368721805" && service.VerifyPassword(password,defaultPasswordHash))
+            // ✅ Kiểm tra admin
+            if (members.SDT == "0368721805" && service.VerifyPassword(password, defaultPasswordHash))
             {
                 // Lưu session
                 HttpContext.Session.SetInt32("MaUser", 1); // id ảo
-                // Redirect đến trang danh sách xe
+                HttpContext.Session.SetString("TenDN", "Admin");  // ✅ thêm dòng này
+                HttpContext.Session.SetString("VaiTro", "Admin"); // ✅ thêm dòng này
+
+                // Chuyển đến trang admin
                 return RedirectToAction("Index", "Admin");
             }
+
             //kiem tra sodien thoai
             var member = responsitories.GetMembersSDT(members.SDT);
             if (member == null)
@@ -95,12 +102,13 @@ namespace BTL.Controllers
             //dieu huong dựa trên vai trò 
             if (member.VaiTro == "ChuXe")
             {
-                return RedirectToAction("Index","Chuxe");
+                return RedirectToAction("Index", "Chuxe");
             }
-            else if(member.VaiTro =="ThueXe")
+            else if (member.VaiTro == "ThueXe")
             {
                 return RedirectToAction("Index", "Home");
             }
+            
 
             //Neu co loi quay lai trang dang nhap
             ViewBag.Message = "Đã có lỗi xảy ra ";
@@ -114,6 +122,56 @@ namespace BTL.Controllers
             HttpContext.Session.Clear();
             // Chuyển về trang đăng nhập
             return RedirectToAction("DangNhap", "Member");
+        }
+
+        public IActionResult ChinhSua()
+        {
+            var maUser = HttpContext.Session.GetInt32("MaUser");
+            if (maUser == null)
+            {
+                return RedirectToAction("DangNhap");
+            }
+
+            var user = _context.members.FirstOrDefault(x => x.MaUser == maUser);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return View(user);
+        }
+
+        // ✅ Xử lý lưu thay đổi
+        [HttpPost]
+        public IActionResult ChinhSua(Members model)
+        {
+            var maUser = HttpContext.Session.GetInt32("MaUser");
+            if (maUser == null)
+            {
+                return RedirectToAction("DangNhap");
+            }
+
+            var user = _context.members.FirstOrDefault(x => x.MaUser == maUser);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            // Cập nhật các trường cho phép sửa
+            user.TenDN = model.TenDN;
+            user.Email = model.Email;
+            user.SDT = model.SDT;
+
+            // Nếu người dùng nhập mật khẩu mới
+            if (!string.IsNullOrEmpty(model.MatKhau))
+            {
+                user.MatKhau = model.MatKhau;
+            }
+
+            _context.SaveChanges();
+
+            ViewBag.Message = "Cập nhật tài khoản thành công!";
+            return View(user);
         }
     }
 }
